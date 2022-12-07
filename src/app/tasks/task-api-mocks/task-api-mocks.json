@@ -11,11 +11,65 @@
       "uuid": "7874aa5d-70ee-4676-b35a-f0a447010711",
       "documentation": "",
       "method": "get",
-      "endpoint": "tasks",
+      "endpoint": "tasks/:date",
       "responses": [
         {
           "uuid": "1df3e4ed-efe0-46f8-9dfc-77401d06cb5f",
-          "body": "[\n  {\"title\":\"gjubujvyct\"},\n   {\"title\":\"gjubujvyct\"},\n   {\"title\":\"gjubujvyct\"},\n   {\"title\":\"gjubujvyct\"},\n   {\"title\":\"gjubujvyct\"},\n  \n  \n  \n  ]",
+          "body": "\n    [{\"title\":\"call mom\"},\n   {\"title\":\"buy grocery\"},\n   {\"title\":\"wash dishes\"},\n   {\"title\":\"clean refrigerator\"},\n   {\"title\":\"study angular\"}]\n  \n  ",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "bc724722-6b9a-4b33-a58b-c6b7dd1b88bf",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "tasks/:date",
+      "responses": [
+        {
+          "uuid": "e1c2e259-6e28-4afc-a3d5-a9f3ae46c7eb",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "b1bace09-4a38-4f0a-85b8-5cf9f1291d76",
+      "documentation": "",
+      "method": "delete",
+      "endpoint": "tasks/:date/:title",
+      "responses": [
+        {
+          "uuid": "d48e270b-ddb7-4040-b42c-2593eff99a8f",
+          "body": "{}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -52,6 +106,18 @@
     {
       "key": "Content-Type",
       "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
     }
   ],
   "proxyReqHeaders": [

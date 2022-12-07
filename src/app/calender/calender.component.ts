@@ -9,6 +9,7 @@ export class CalenderComponent implements OnInit{
   
   constructor(){}
   ngOnInit(): void {
+   throw new Error("failed to load calender");
    
   }
  
