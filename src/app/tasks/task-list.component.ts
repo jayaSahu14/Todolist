@@ -1,9 +1,11 @@
+import { formatDate } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { ActivatedRoute, Route } from '@angular/router';
 import { NewTask } from './new-task.dto';
 import { TaskItem } from './task-item.dto';
 import { TaskService } from './task.service';
+
 @Component({
   selector: 'app-task-list',
   templateUrl: './task-list.component.html',
@@ -32,7 +34,7 @@ export class TaskListComponent implements OnInit {
     if (taskNgform.valid==false)
     return;
      this.taskService.addTask(this.newTask);
-     this.tasks=this.taskService.getAllTasks();
+    
      taskNgform.reset({date:this.newTask.date});
    }
  
@@ -40,7 +42,7 @@ export class TaskListComponent implements OnInit {
     var userCnf=confirm(`sure want to delete task \n "${existingTask.title}"`)
     if(userCnf){
       this.taskService.removeTask(existingTask);
-      this.tasks=this.taskService.getAllTasks();
+     
     }
    }
  
