@@ -1,0 +1,46 @@
+.is-done{
+    text-decoration: line-through;
+}
+
+.even{
+    background-color:aqua;
+}
+
+.odd{
+    background-color: blue ;
+    
+}
+
+.tr{
+
+    height: 50 px;
+    
+    text-align: left;
+    flex-wrap: nowrap;
+    display: flex;
+}
+
+td{
+    margin-left: 1rem;
+}
+
+.table{text-align: center;}
+
+
+.div{
+    justify-content: center;
+}
+
+p{
+    line-height: 50 px;
+}
+
+.ve{
+    color: red;
+}
+
+.add-button{
+    color: blanchedalmond;
+    background-color: blue;
+
+}
