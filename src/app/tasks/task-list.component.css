@@ -62,7 +62,7 @@
     cursor: default;
   }
 
-  .validation-error {
+  .ve {
     color:rgb(232, 12, 12);
     margin-bottom: 10px;
   }
