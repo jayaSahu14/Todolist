@@ -3,4 +3,15 @@
    {"title":"wash dishes"},
    {"title":"clean refrigerator"},
    {"title":"study angular"}]
+
+
+   -----------
+
+   in mockoon
+
+   1.get: tasks/:date
+   2.post: tasks/:date
+   3.delete: tasks/:date/:title
+
+   header: add cors header
   
